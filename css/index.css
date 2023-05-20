@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "summerdream";
+  src: url(../font/Summerdreamsansdemo-X396G.ttf);
+}
+
+body,
+html {
+  font-family: "summerdream", sans-serif;
+}
+
+p {
+  font-size: 40px;
+}
+
+#smooth-wrapper {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+.scrollNum {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 50px;
+  margin: -25px 0 0 -150px;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  z-index: 99999;
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 1000vh;
+  background-color: red;
+  /* height: calc(500vh + 3060px); */
+  /* 전체 높이 */
+}
+
+#section01 {
+  height: 980px;
+  width: 100vw;
+}
+
+#section02 {
+  height: 980px;
+  width: 1920px;
+}
+
+#section02 .bgimg {
+  position: relative;
+  height: 980px;
+  width: 1920px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#section02 .circle_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#section02 .open_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 호버하기 전 이미지 */
+#section02 .get_start_hover {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  background: url(../img/intro/get_start_stroke.png);
+  width: 129px;
+  height: 40px;
+  /* 호버하고 1초만에 바뀜 */
+  transition: 0.1s;
+  z-index: 100;
+}
+
+/* 호버 한 후 이미지 */
+#section02 .get_start_hover:hover {
+  background: url(../img/intro/get_start_white.png);
+}
+
+#section02 .tunes_out_noises {
+  position: absolute;
+  top: 50%;
+  left: 350px;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+#section02 .tunes_in_voices {
+  position: absolute;
+  top: 50%;
+  right: -200px;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+#section02 .bottom_text {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+#section02 .line {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+}
